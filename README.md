@@ -1,1 +1,1 @@
-안녕하세요 박진혁입니다
+Park Jinhyeok
