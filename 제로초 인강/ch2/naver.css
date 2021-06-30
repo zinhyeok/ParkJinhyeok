@@ -2,5 +2,19 @@
 /* Selector */
 #headerCenter{
     margin: 0 auto; 
-    width:1080px;
+    width: 1080px;
+}
+
+#hederSearch h1{
+    width: 280px;
+    display: inline-block;
+}
+
+#headerSearch h2{
+    display: none;
+}
+
+#headerSearch fieldset{
+    width: 520px
+    display: inline-block;
 }
