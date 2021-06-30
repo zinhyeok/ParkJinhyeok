@@ -1,0 +1,25 @@
+/*Cascading Style sheet */
+/* Selector */
+.blind{
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+}
+
+#headerCenter{
+    margin: 0 auto; 
+    width: 1080px;
+}
+
+#hederSearch h1{
+    width: 280px;
+    display: inline-block;
+}
+
+#headerSearch fieldset{
+    width: 520px
+    display: inline-block;
+}
