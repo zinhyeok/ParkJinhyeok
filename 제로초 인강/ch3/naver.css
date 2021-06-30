@@ -14,12 +14,30 @@
     width: 1080px;
 }
 
-#hederSearch h1{
-    width: 280px;
+#headerSearch h1{
+    width: 222px;
+    height: 48px;
     display: inline-block;
+    /*background-image: url(./sp_search.png);*/
+    /*background-position: -4px -10px; */
+    text-indent: 100%;
+    overflow: hidden;
+    background: url(./sp_search.png) -4px -10px no-repeat;
+}
+
+#headerSearch h2{
+    display: none;
 }
 
 #headerSearch fieldset{
-    width: 520px
+    margin-left: 20px;
+    padding: 12px 0 12px 10px;
+    border: 2px solid #03cf5d;
+    width: 521px;
+    height: 49px;
     display: inline-block;
+}
+
+#headerSearch a{
+    text-decoration: none;
 }
