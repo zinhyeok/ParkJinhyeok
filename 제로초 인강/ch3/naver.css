@@ -1,5 +1,9 @@
 /*Cascading Style sheet */
 /* Selector */
+*{
+box-sizing: border-box;
+}
+
 .blind{
     position: absolute;
     clip: rect(0 0 0 0);
@@ -23,6 +27,7 @@
     text-indent: 100%;
     overflow: hidden;
     background: url(./sp_search.png) -4px -10px no-repeat;
+    vertical-align: middle;
 }
 
 #headerSearch h2{
@@ -36,8 +41,16 @@
     width: 521px;
     height: 49px;
     display: inline-block;
+    vertical-align: middle;
 }
+
 
 #headerSearch a{
     text-decoration: none;
+}
+
+#headerSearch input{
+    border: none;
+    padding: 0;
+    outline: none;
 }
