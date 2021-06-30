@@ -1,0 +1,76 @@
+/*Cascading Style sheet */
+/* Selector */
+*{
+box-sizing: border-box;
+}
+
+.blind{
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+}
+
+#headerCenter{
+    margin: 0 auto; 
+    width: 1080px;
+}
+
+#headerSearch h1{
+    width: 222px;
+    height: 48px;
+    display: inline-block;
+    /*background-image: url(./sp_search.png);*/
+    /*background-position: -4px -10px; */
+    text-indent: 100%;
+    overflow: hidden;
+    background: url(./sp_search.png) -4px -10px no-repeat;
+    vertical-align: middle;
+}
+
+#headerSearch h2{
+    display: none;
+}
+
+#headerSearch fieldset{
+    margin-left: 20px;
+    padding: 12px 0 12px 10px;
+    border: 2px solid #03cf5d;
+    width: 521px;
+    height: 49px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+#headerSearch a{
+    text-decoration: none;
+}
+
+#headerSearch input{
+    border: none;
+    padding: 0;
+    outline: none;
+}
+
+#headerSearch fieldset button{
+    width: 49px;
+    height: 49px;
+    border: none;
+    padding: 0;
+    outline: none;
+    background-color: #03cf5d;
+    
+}
+
+#searchImage{
+    width: 21px;
+    height: 21px;
+    display: inline-block;
+    background-image: url(./sp_search.png);
+    background-repeat: no-repeat;
+    background-position: -3px -60px;
+    margin: 14px;
+}
