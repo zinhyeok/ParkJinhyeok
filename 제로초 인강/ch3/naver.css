@@ -54,3 +54,23 @@ box-sizing: border-box;
     padding: 0;
     outline: none;
 }
+
+#headerSearch fieldset button{
+    width: 49px;
+    height: 49px;
+    border: none;
+    padding: 0;
+    outline: none;
+    background-color: #03cf5d;
+    
+}
+
+#searchImage{
+    width: 21px;
+    height: 21px;
+    display: inline-block;
+    background-image: url(./sp_search.png);
+    background-repeat: no-repeat;
+    background-position: -3px -60px;
+    margin: 14px;
+}
