@@ -4,10 +4,10 @@
   box-sizing: border-box;
 }
 
-html,
-body {
-  margin: 0;
-  padding: 0;
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Dotum,'돋움',Helvetica,"Apple SD Gothic Neo",sans-serif;
 }
 
 .blind {
@@ -26,6 +26,7 @@ body {
 
 #headerSearch {
   clear: both;
+  padding-top: 20px;
 }
 
 #headerSearch h1 {
@@ -45,7 +46,7 @@ body {
 }
 
 #headerSearch fieldset {
-  margin-left: 20px;
+  margin-left: 18px;
   padding: 12px 0 12px 10px;
   border: 2px solid #03cf5d;
   width: 521px;
@@ -90,11 +91,16 @@ body {
   background-position: -3px -60px;
   margin: 14px;
 }
-
+nav {
+  height: 40px;
+  border-top: 1px solid #f1f3f6;
+  border-bottom: 1px solid #d1d8ef;
+}
 nav ul {
   margin: 0;
-  padding: 0;
+  padding: 16px 0px 0px 4px;
   list-style: none;
+  display: inline-block;
 }
 
 nav li {
@@ -140,6 +146,15 @@ nav li:nth-child(6) span:first-child {
   background-position: -70px -285px;
 }
 
+.navDivider {
+  float: left;
+  margin: 18px 16px 0px;
+  width: 1px;
+  height: 14px;
+  background: #ebeef3;
+  display: inline-block;
+}
+
 #headerTop {
   float: right;
 }
@@ -149,4 +164,18 @@ nav li:nth-child(6) span:first-child {
   letter-spacing: -1px;
   line-height: 22px;
   font-size: 11px;
+}
+
+header {
+  height: 170px;
+}
+#searchRanking{
+    position: absolute;
+    top: 16px;
+    right: 100px;
+
+#rankNum{
+    margin-top: -9px;
+    color: #00ab33;
+    font-size: 16px;
 }
