@@ -3,14 +3,13 @@
 round_num = 1
 current_num = 0
 # while문 임의로 반복횟수 할당
-while(current_num< 31):
+while(current_num < 31 ):
     player_num = 0
     # change playerName by round(odd, even)
     if round_num % 2 == 1:
         playerName = "A"
     else:
         playerName = "B"
-
     # input baskin num
     while(player_num == 0):
         try:
@@ -30,5 +29,11 @@ while(current_num< 31):
         current_num = current_num + 1
         print("player{}: {}".format(playerName, current_num))
     
-    print(current_num)
     round_num = round_num + 1
+
+    if round_num % 2 == 1:
+        playerName = "A"
+    else:
+        playerName = "B"
+
+print("{} win!".format(playerName))
