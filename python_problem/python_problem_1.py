@@ -11,3 +11,6 @@ while(num == 0):
     except IndexError:
         print('1, 2, 3 중 하나를 입력하세요')
         num = 0
+
+for i in range(num):
+    print("playerA: {}".format(i+1))
