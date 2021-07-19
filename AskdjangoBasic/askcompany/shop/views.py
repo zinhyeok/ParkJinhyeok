@@ -18,7 +18,7 @@ def item_list(request):
     q = request.Get.get('q', '')
     if q:
         qs = qs.filter(neme__icontains=q)  # 대소문자 무시
-    return render(request, 'shop/item_list.html', {
+    return render(request, 'shop/item_list.html', {  # shop/은 namespace 정확한 template을 불러주기 위해 이용
         'item_list': qs,
         'q': q,
     })
