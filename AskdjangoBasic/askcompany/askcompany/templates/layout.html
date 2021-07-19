@@ -1,21 +1,25 @@
+{%load static%} <!--모든 템플릿에 해주기 static 사용시 -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> {% block content %}Ask Company {% endblock %}</title>
+    <title> {% block title %}Ask Company {% endblock %}</title>
     <style>
         body {background-color: lightyellow;}
     </style>
-    {% block extra_head %} {% endblock %}
+        <link rel="stylesheet" href="{%static "main.css" %}"/>
+        {%block extra_head%}{% endblock %} <!--css-->
 </head>
 <body>
     <h1>Ask Company</h1>
-    {% block content %} <!--부모에 작성-->
+    {% block content %} 
     {% endblock %}
     <hr/>
     &copy; 2018. Ask Company 
-    {% block extra_body %} {% endblock %} <!--js 파일 입력 시 사용-->
+    <!--js 파일 입력 시 사용-->
+    <script src="{%static "main.js" %}"/> 
+    {%block extra_body%} {% endblock %} 
 </body>
 </html>

@@ -1,4 +1,12 @@
 {% extends "layout.html" %}
-{% block content %} Shop by Ask Company {% endblock %}
-{% block extra_head %} {% endblock %}
-{% block extra_body %} {% endblock %}
+{% load static %}
+
+{% block title %}Shop by Ask Company{% endblock %}
+{% block extra_head %}
+    <!--{{ block.super }}-->
+    <link rel="stylesheet" href="{% static "shop/shop.css" %}" />
+{% endblock %}
+
+{% block extra_body %}
+    <!--{{ block.super }}-->
+{% endblock%} 
