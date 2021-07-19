@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> {% block content %}Ask Company {% endblock %}</title>
+    <style>
+        body {background-color: lightyellow;}
+    </style>
+    {% block extra_head %} {% endblock %}
+</head>
+<body>
+    <h1>Ask Company</h1>
+    {% block content %} <!--부모에 작성-->
+    {% endblock %}
+    <hr/>
+    &copy; 2018. Ask Company 
+    {% block extra_body %} {% endblock %} <!--js 파일 입력 시 사용-->
+</body>
+</html>
