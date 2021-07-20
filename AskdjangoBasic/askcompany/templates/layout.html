@@ -14,12 +14,12 @@
 </head>
 <body>
     <h1>Ask Company</h1>
-    {% block content %} 
+    {% block content %}
     {% endblock %}
-    <hr/>
-    &copy; 2018. Ask Company 
-    <!--js 파일 입력 시 사용-->
-    <script src="{%static "main.js" %}"/> 
-    {%block extra_body%} {% endblock %} 
+    <hr />
+    &copy; 2018. Ask Comany.
+    {% block extra_body %}
+        <script src = "{% static 'main.js' %}"></script>
+    {% endblock %}
 </body>
 </html>

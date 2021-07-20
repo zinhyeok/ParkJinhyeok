@@ -3,6 +3,9 @@
 
 {% block content %}
     <h2>{{item.name}}</h2>
+    {%if item.photo %} 
+        <img src="{{item.photo.url}}" style="max-width: 100%;"><br/>
+    {%endif%}
     가격: {{item.price | intcomma}}원 {%comment%} 160.000 {%endcomment%}
     {% if item.desc %}
     <p>
