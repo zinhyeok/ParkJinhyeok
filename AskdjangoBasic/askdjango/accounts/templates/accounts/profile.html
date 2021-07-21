@@ -2,5 +2,6 @@
 
 {%block content %}
     <h2>{{user}}'s Profile</h2>
-
+    <h1>Bio</h1>
+    {{user.profile.bio|default:"empty"}}
 {%endblock %} 
