@@ -59,6 +59,7 @@ INSTALLED_APPS = [
     'debug_toolbar',
     'shop',
     'blog',
+    'common'
 ]
 
 MIDDLEWARE = [
