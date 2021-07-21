@@ -10,6 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
+from django.urls import reverse_lazy
 from pathlib import Path
 import os
 
@@ -39,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'blog',
+    'accounts'
 ]
 
 MIDDLEWARE = [
@@ -126,4 +128,6 @@ STATIC_URL = '/static/'
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
+LOGIN_URL = reverse_lazy('login')
+# LOGIN_REDIRECT_URL = reverse_lazy('profile')
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
