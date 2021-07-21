@@ -1,6 +1,7 @@
 from askcompany.utils import uuid_upload_to
 from django.db import models
 from askcompany.utils import uuid_upload_to
+from django.urls import reverse
 # Create your models here.
 
 
@@ -15,4 +16,7 @@ class Item(models.Model):
     updated_at = models.DateTimeField(auto_now=True)
 
     def __str__(self):
-        return self.name
+        return f'<{self.pk}>{self.name}'
+
+    def get_absolute_url(self):
+        return reverse("shop:item_detail", args=[self.pk])
