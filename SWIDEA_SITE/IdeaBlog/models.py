@@ -4,7 +4,7 @@ from django.db import models
 
 
 class Idea(models.Model):
-    name = models.CharField(max_length=50)
+    title = models.CharField(max_length=50)
     image = models.ImageField(
         upload_to='idea_image/%Y/%m/%d', null=True, blank=True)
     content = models.TextField()
@@ -14,4 +14,4 @@ class Idea(models.Model):
         to='devtoolBlog.Devtool', on_delete=models.CASCADE, null=True, blank=True)
 
     def __str__(self):
-        return self.name
+        return self.title
